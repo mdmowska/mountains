@@ -1,0 +1,174 @@
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul {
+	background-image: url("navigation.jpeg");
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	z-index: 100;
+	opacity: 0.8;
+}
+
+nav ul li {
+	display: inline;
+}
+
+nav ul li a {
+	display: inline-block;
+	text-align: center;
+	padding: 15px 30px 15px 30px;
+	text-decoration: none;
+	color: #3A3B4C;
+	font-weight: 700;
+	font-size: 30px;
+	font-family:'Nanum Myeongjo', serif;
+}
+
+nav ul li a:hover {
+  opacity: 0.2;
+}
+
+#story_container {
+	margin-top: 60px;
+	width: 100%;
+	height: 1%;
+	overflow: hidden;
+	background-color: #F2EFE9;
+	opacity: 0.6;
+	padding: 15px;
+	display: block;
+}
+
+#story_container_image {
+	height: inherit;
+	width: 30%;
+	float:left;
+}
+
+#story_container_image img {
+  	width: 100%;
+  	margin: auto 5% auto 5%;
+  	/*left: 50%; 
+  	margin-right: 5%; 
+  	top: 50%;
+  		transform: translate(-50%, -50%);*/
+}
+
+#story_container_story {
+	height: inherit;
+	width: 70%;
+	float:left;
+}
+
+#story_container_story p {
+	font-family:'PLayfair Display', serif;
+	color: #2E3427;
+	font-size: 2vmax;
+	margin-right: 5%;
+	margin-left: 5%;
+	margin-top: auto;
+	margin-bottom: auto;
+	position: relative;
+}
+
+#story_container p a {
+	text-decoration: none;
+	color: #2E3427;
+	font-weight: 700;
+}
+
+#story_container p a:hover {
+	opacity: 0.3;
+}
+
+.container {
+	position: relative;
+	overflow: hidden;
+}
+
+.container p {
+	color: #EEEEFF;
+	font-family:'Nanum Myeongjo', serif;
+	font-style: italic;
+	font-size: 1.5vmax;
+}
+
+.bottom-right { 
+	position: absolute;
+	text-align: center;
+	bottom: 20px;
+ }
+
+.image-gallery {
+	font-family:'PLayfair Display', serif;
+	color: #012622;
+	background-color: #D1E0E4;
+}
+
+h2 {
+	font-style: bold;
+	font-size: 3vmax;
+}
+
+h3 {
+	font-size: 2vmax;
+}
+
+div.gallery {
+	border: 1px solid #56667A;
+}
+
+div.gallery:hover {
+	border: 2px solid #003B36;
+}
+
+div.gallery img {
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+}
+
+div.desc {
+	padding: 5%;
+	text-align: center;
+	font-family:'PLayfair Display', serif;
+	color: #012622;
+	font-size: 2vmax;
+	box-sizing: border-box;
+}
+
+div.gallery a {
+	text-decoration: none;
+}
+
+.responsive {
+	margin: auto;
+	padding: 1% 1%;
+	display: inline-block;
+	width: 22%;
+}
+
+@media only screen and (max-width: 800px) {
+	.responsive {
+		width: 47%;
+		}
+}
+
+@media only screen and (max-width: 500px) {
+	.responsive {
+		width: 100%;
+		}
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
